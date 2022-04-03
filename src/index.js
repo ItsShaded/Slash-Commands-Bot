@@ -1,4 +1,4 @@
-const { Client, Intents, Collection } = require('discord.js')
+const { Client, Intents, Collection, MessageEmbed } = require('discord.js')
 const fs = require('fs')
 
 const client = new Client({
@@ -14,14 +14,13 @@ const client = new Client({
 })
 
 client.commands = new Collection()
-
 require('dotenv').config()
 
-const commandFiles = fs.readdirSync('.src/commands').filter(file => file.endsWith('.js'))
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 const commands = []
 client.commands = new Collection()
 for (const file of commandFiles) {
-    const command = require(`.src/commands/${file}`)
+    const command = require(`./commands/${file}`)
     commands.push(command.data.toJSON())
     client.commands.set(command.data.name, command)
 }
