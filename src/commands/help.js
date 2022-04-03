@@ -8,3 +8,5 @@ module.exports = {
           interaction.reply({ content: `Type \`/\` and click on my profile to browse my available commands.`, ephemeral: true });
     }
 }
+
+//amogus
