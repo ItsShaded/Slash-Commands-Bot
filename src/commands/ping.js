@@ -8,7 +8,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setColor('#23272A')
             .setTimestamp()
-            .setTitle(`Pong <:valid:844301736264204339>`)
+            .setTitle(`Pong!`)
             .addField('Latancy:', `${(interaction.client.ws.ping).toFixed(0)} ms`, true)
             .addField('API Latancy:', `${Date.now() - interaction.createdTimestamp}ms`)
         interaction.reply({ embeds: [embed] , ephemeral: true })
