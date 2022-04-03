@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    Discord Slash Command Bot
+A simple DJS V13 Slash command bot
     <br />
     <br />
     <a href="https://shaded.netlify.app">Website</a>
