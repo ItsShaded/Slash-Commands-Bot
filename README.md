@@ -14,7 +14,7 @@
 A simple DJS V13 Slash command bot
     <br />
     <br />
-    <a href="https://shaded.netlify.app">Website</a>
+    <a href="https://itsshaded.co">Website</a>
     &bull;
     <a href="https://github.com/ItsShaded/Slash-Commands-Bot/issues">Report a Bug</a>
     &bull;
